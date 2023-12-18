@@ -1,0 +1,9 @@
+zone "vivabm.local" IN {
+  	type master;
+	file "/var/named/vivabm.local";
+};
+
+zone "0.168.192.in-addr.arpa" IN {
+  	type master;
+	file "/var/named/vivabm.local.rev";
+};

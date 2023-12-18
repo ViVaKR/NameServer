@@ -1,0 +1,18 @@
+;
+; BIND reverse data file for local loopback interface
+; SOA record with MNAME and RNAME updated
+$TTL	604800
+@	IN	SOA	vivabm.local. root.vivabm.local. (
+      			         3		; Serial
+			    604800		; Refresh
+ 			     86400		; Retry
+  			   2419200		; Expire
+			    604800 )		; Negative Cache TTL
+; Name server record
+@	IN	NS	ns.vivabm.local.
+; A record for name server
+ns	IN	A	192.168.0.222
+; PTR record for name server
+222	IN	PTR	ns.vivabm.local.
+20	IN	PTR	hello.vivabm.local.
+30	IN	PTR	world.vivabm.local.

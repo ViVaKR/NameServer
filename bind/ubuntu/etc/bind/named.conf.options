@@ -1,0 +1,21 @@
+acl LAN {
+        192.168.0.0/24;
+};
+
+options {
+        directory "/var/cache/bind";
+        allow-query {
+                localhost;
+                LAN;
+        };
+
+        forwarders {
+                1.1.1.1;
+                8.8.8.8;
+        };
+
+        recursion yes;
+
+        dnssec-validation auto;
+        listen-on-v6 { any; };
+};

@@ -1,0 +1,15 @@
+$TTL    604800
+@       IN 	SOA      vivabm.local. root.vivabm.local. (
+                         	3          ; Serial
+                    	   604800          ; Refresh
+                     	    86400          ; Retry
+                   	  2419200          ; Expiry
+                    	   604800 )        ; Negative Cache TTL
+; Name server record
+        IN	NS      ns.vivabm.local.    
+; A record for name server
+ns      IN	A       192.168.0.222
+; A record for clients
+hello	IN	A	192.168.0.20
+world	IN	A	192.168.0.30
+

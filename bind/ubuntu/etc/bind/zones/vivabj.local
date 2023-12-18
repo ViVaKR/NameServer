@@ -1,0 +1,19 @@
+;
+; BIND data file for local loopback interface
+; SOA record with MNAME and RNAME updated
+$TTL	604800
+@	IN	SOA	vivbj.local. root.vivbj.local. (
+			      3		; Serial
+			 604800		; Refresh
+			  86400		; Retry
+			2419200		; Expire
+			 604800 )	; Negative Cache TTL
+; Name server record
+@	IN	NS	ns.vivabj.local.
+
+; A record for name server
+ns	IN	A	192.168.0.17
+
+; A record for clients
+hello	IN	A	192.168.0.8
+world	IN	A	192.168.0.9
