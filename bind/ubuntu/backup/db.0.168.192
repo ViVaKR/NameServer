@@ -1,0 +1,13 @@
+;
+; BIND data file for local loopback interface
+;
+$TTL	604800
+@	IN	SOA	ns.vivakr.local. root.localhost. (
+	             2024082101      	; Serial
+			 604800		; Refresh
+			  86400		; Retry
+			2419200		; Expire
+			 604800 )	; Negative Cache TTL
+;
+@	IN	NS	ns.
+8	IN	PTR	ns.vivakr.local.
