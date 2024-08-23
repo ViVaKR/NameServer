@@ -33,4 +33,10 @@
     rndc-confgen > etc/rndc.conf
     head -n 6 /etc/rndc.conf > /etc/rndc.key
 
+    service named status
+    service named reload
+    service named restart
+    service named start
+    service named stop
+
 ```
