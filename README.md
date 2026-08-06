@@ -24,6 +24,7 @@
     - P3M10D(3개월 10일)
 
 ```bash
+    # 서비스 관리에 관한 기본적인 명령어 모음
     named-checkconf /etc/named.conf
     named-checkzone vivarkr.com.zone /var/named/vivakr.com.zone
 
